@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "STRONG",
+  "description": "STRONG is a placeholder EEG dataset formatted according to BIDS with HED annotations. The README provides no detailed description of the participants, task, or experimental content. The dataset is mirrored from an OpenNeuro deposit.",
+  "methods_description": "EEG data were acquired and preprocessed according to BIDS standards. The dataset includes EEG recordings with associated event markers and channel information. Data are provided in EEGLAB format (.set/.fdt) with BIDS-compliant JSON sidecars and TSV event files. [REQUIRED: Expand with specific acquisition parameters, sampling rate, electrode montage, preprocessing steps, and study design details.]",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,6 +12,22 @@
     "Jon Touryan": {},
     "Kevin King": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "HED annotation"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004849.v1.0.0",
@@ -22,22 +40,22 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004849",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004849",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004849",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "82.8 MB (3 files)"
+    "78.93 MB (3 files)"
   ],
   "formats": [
     ".fdt",
@@ -46,28 +64,6 @@
     ".set",
     ".tsv",
     ".yml"
-  ],
-  "description": "STRONG is an EEG dataset derived from OpenNeuro dataset ds004849 (v1.0.0). This dataset contains raw EEG recordings and associated metadata in BIDS format. The dataset includes EEG data files (.set, .fdt), event information (.tsv), and JSON sidecars for complete documentation of acquisition parameters. Data are provided in EEGLAB format with BIDS-compliant JSON sidecars and TSV event files for full reproducibility. [NOTE: This description requires substantiation by completing the README with actual dataset details including research objectives, participant demographics, experimental tasks, acquisition parameters, and preprocessing methods before DOI minting.]",
-  "methods_description": "EEG data were acquired and preprocessed according to BIDS standards. The dataset includes EEG recordings with associated event markers and channel information. Data are provided in EEGLAB format (.set/.fdt) with BIDS-compliant JSON sidecars and TSV event files. [REQUIRED: Expand with specific acquisition parameters, sampling rate, electrode montage, preprocessing steps, and study design details.]",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "electroencephalography"
-    },
-    {
-      "term": "brain imaging"
-    },
-    {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "STRONG"
-    },
-    {
-      "term": "BIDS"
-    }
   ],
   "source_hash": "cf645b6117bb519304418283246474eb88679018f18becd2f4711bb7f069b68b"
 }
