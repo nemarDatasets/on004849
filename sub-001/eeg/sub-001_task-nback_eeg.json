@@ -9,5 +9,8 @@
   "EOGChannelCount": 0,
   "ECGChannelCount": 0,
   "EMGChannelCount": 0,
+  "MISCChannelCount": 0,
+  "TriggerChannelCount": 0,
+  "EEGPlacementScheme": "10-10",
   "SoftwareFilters": "n/a"
 }
